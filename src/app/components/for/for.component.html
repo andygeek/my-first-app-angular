@@ -1,0 +1,18 @@
+<div class="card">
+    <div class="card-header">
+        <h5>Directiva estructural <strong>For</strong></h5>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="list-group ">
+                    <li *ngFor="let item of lista" class="list-group-item">🧙🏼‍♂️ {{item}}</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <button (click)="agregar()" class="btn btn-block btn-success">Agregar</button>
+                <button *ngIf="!desaparece" (click)="eliminar()" class="btn btn-block btn-danger">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>

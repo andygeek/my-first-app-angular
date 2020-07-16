@@ -1,0 +1,16 @@
+<div class="card mb-3">
+    <div class="card-header">
+        <h5>Directiva estructural <strong>If</strong></h5>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-8 text-center">
+                <img *ngIf="visible" src="https://miro.medium.com/max/256/1*3H6_a9Srb655m3NiqlbbKQ.png" alt="">
+            </div>
+            <div class="col-md-4 text-center">
+                <button *ngIf="visible == false" (click)="mostrar()" class="btn btn-success btn-block">Mostrar</button>
+                <button *ngIf="visible == true" (click)="ocultar()" class="btn btn-warning btn-block">Ocultar</button>
+            </div>
+        </div>
+    </div>
+</div>
